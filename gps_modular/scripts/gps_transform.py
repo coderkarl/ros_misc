@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 from math import sin, cos
@@ -9,7 +9,7 @@ import tf
 from geometry_msgs.msg import Twist, Quaternion, Point, Pose, Vector3, Vector3Stamped
 from sensor_msgs.msg import NavSatFix, NavSatStatus
 
-import gps
+#import gps
 import os
 
 class GPSManager():
@@ -36,7 +36,7 @@ class GPSManager():
         self.init_count = 0
         self.init_count = 0
         self.init_state = True
-        print "initializing gps, wait"
+        print("initializing gps, wait")
  
     def gps_callback(self, data):
         t2 = rospy.Time.now()
@@ -57,7 +57,7 @@ class GPSManager():
                     #print "lat(N0): ", self.N0
                     self.E0 = self.E0/self.init_count_limit
                     #print "long(E0): ", self.E0
-                    print "GPS initialized. Go"
+                    print("GPS initialized. Go")
             else:
                 self.init_state = False
                 self.lat_factor = cos(lat*3.14159/180.0)
@@ -127,5 +127,5 @@ if __name__ == '__main__':
         #    r.sleep()
             
     except rospy.ROSInterruptException:
-        print "ROS Interrup Exception"
+        print("ROS Interrup Exception")
         pass
