@@ -26,7 +26,8 @@ https://github.com/CentralIllinoisRoboticsClub/nav_sim
 - [https://github.com/ros2/detection_visualizer/blob/master/detection_visualizer/__init__.py](https://github.com/ros2/detection_visualizer/blob/master/detection_visualizer/__init__.py)
 
 ## Misc
-- [https://github.com/MapIV/ros2_bag_to_image](https://github.com/MapIV/ros2_bag_to_image
+- [https://roboticsbackend.com/ros2-package-for-both-python-and-cpp-nodes/](https://roboticsbackend.com/ros2-package-for-both-python-and-cpp-nodes/)
+- [https://github.com/MapIV/ros2_bag_to_image](https://github.com/MapIV/ros2_bag_to_image)
 - [https://wiki.ros.org/depthimage_to_laserscan](https://wiki.ros.org/depthimage_to_laserscan)
 - [https://github.com/ricardodeazambuja/depthimage_to_pointcloud2](https://github.com/ricardodeazambuja/depthimage_to_pointcloud2)
 - [https://docs.ros.org/en/rolling/p/depth_image_proc/doc/tutorials.html#launching-depth-image-proc-components](https://docs.ros.org/en/rolling/p/depth_image_proc/doc/tutorials.html#launching-depth-image-proc-components)
