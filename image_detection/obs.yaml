@@ -1,0 +1,22 @@
+path: descent_data/
+train: 'train/images'
+val: 'valid/images'
+ 
+# class names
+names: 
+  0: 'ball'
+  1: 'box'
+  2: 'hoop'
+
+#translate: 0.2  # image translation (+/- fraction)
+#scale: 0.2  # image scale (+/- gain)
+#shear: 0.2  # image shear (+/- deg) from -0.5 to 0.5
+#perspective: 0.1  # image perspective (+/- fraction), range 0-0.001
+#flipud: 0.7  # image flip up-down (probability)
+#fliplr: 0.5  # image flip left-right (probability)
+#mosaic: 0.3  # image mosaic (probability)
+#mixup: 0.1  # image mixup (probability)
+
+# https://medium.com/@k.sunman91/data-augmentation-on-ultralytics-for-training-yolov5-yolov8-97a8dab31fef
+
+# https://github.com/ultralytics/ultralytics/issues/14374
