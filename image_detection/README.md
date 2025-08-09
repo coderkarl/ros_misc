@@ -5,13 +5,18 @@
 - Open browser to localhost:8080
 
 # Ultralytics image detection training
--[https://learnopencv.com/train-yolov8-on-custom-dataset/](https://learnopencv.com/train-yolov8-on-custom-dataset/)
+- [https://learnopencv.com/train-yolov8-on-custom-dataset/](https://learnopencv.com/train-yolov8-on-custom-dataset/)
 - virtualenv -p python3.8 "ultralytics_env" # Only once
 - source ultralytics_env/bin/activate
 - pip install ultralytics # Only once
 - python3 descent_train.py
-- python3 descent_test.py 
+- python3 descent_test.py
 
+# Export detection model for oak d lite
+- <https://learnopencv.com/object-detection-on-edge-device/>
+- <https://docs.luxonis.com/cloud/hubai/features/model-conversion/>
+- <https://hub.luxonis.com/ai/models/>
+- <https://github.com/luxonis/depthai-ros/issues/452>
 # Label images
 - Label images using label studio
   - Setup desired classes/categories
@@ -24,3 +29,4 @@
   - labels/
 - Rename the exported labels to match the images if necessary
 - Copy the new set of iamges and labels into the main train/ and val/ dirs
+- <https://deepai.org/machine-learning-model/text2img>
