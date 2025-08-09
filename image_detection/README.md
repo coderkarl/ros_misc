@@ -20,9 +20,27 @@
 - <https://github.com/luxonis/depthai-ros/issues/452>
 - <https://github.com/luxonis/depthai-ros/issues/371>
 ### Different Luxonis Converters and Status
+- <https://tools.luxonis.com/>
+  - Recommended converter
+  - YOLOv8(detection only), RVC2
+  - File best.pt from train.py
+  - Input image shape 320
+  - Output is result.zip with best_openvino_2022.1_6shave.blob and best.json
+  - mv best.json ros_best.json
+    ```
+    "model": {
+        "model_name": "/home/karl/Downloads/result/best_openvino_2022.1_6shave.blob",
+        "zoo": "path"
+    },
+    ```
+- <https://hub.luxonis.com/ai/>
+  - Sign in via github
+  - AI, Models, + Add Model
+  - The conversion worked online and I downloaded a folder with a .superblob and json
+  - I tried to setup the ros_nn_config.json in the 
 - <https://blobconverter.luxonis.com/>
   - Not tested. See <https://docs.luxonis.com/software/ai-inference/conversion>
-- <https://tools.luxonis.com/>
+
 # Label images
 - Label images using label studio
   - Setup desired classes/categories
