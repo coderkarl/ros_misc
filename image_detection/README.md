@@ -33,6 +33,24 @@
         "zoo": "path"
     },
     ```
+## Run model with depthai ros
+- custom_camera.yaml
+```
+/**:
+  ros__parameters:
+    camera:
+      i_enable_imu: true
+      i_enable_ir: true
+      i_nn_type: rgb
+      i_pipeline_type: RGB
+    nn:
+      i_nn_config_path: /home/karl/Downloads/result/ros_best.json
+      i_enable_passthrough: true
+    rgb:
+      i_enable_preview: true
+    label_map: ["ball","box","hoop","ramp"]
+```
+- ros2 launch depthai_filters example_det2d_overlay.launch.py params_file:=/home/karl/ros2_ws/src/descentracer/descent_perception/config/custom_camera.yaml
 - <https://hub.luxonis.com/ai/>
   - Sign in via github
   - AI, Models, + Add Model
