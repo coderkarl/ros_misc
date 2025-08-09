@@ -17,6 +17,7 @@
 - <https://docs.luxonis.com/cloud/hubai/features/model-conversion/>
 - <https://hub.luxonis.com/ai/models/>
 - <https://github.com/luxonis/depthai-ros/issues/452>
+- <https://github.com/luxonis/depthai-ros/issues/371>
 # Label images
 - Label images using label studio
   - Setup desired classes/categories
