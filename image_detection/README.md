@@ -33,6 +33,15 @@
         "zoo": "path"
     },
     ```
+- <https://hub.luxonis.com/ai/>
+  - Sign in via github
+  - AI, Models, + Add Model
+  - The conversion worked online and I downloaded a folder with a .superblob and json
+  - I tried to setup the ros_nn_config.json for the .superblob but the ros launch fails saying the blob is not compatible.
+  - Consider referencing the working ros_best.json format from <https://tools.luxonis.com/>
+- <https://blobconverter.luxonis.com/>
+  - Not tested. See <https://docs.luxonis.com/software/ai-inference/conversion>
+ 
 ## Run model with depthai ros
 - custom_camera.yaml
 ```
@@ -51,13 +60,8 @@
     label_map: ["ball","box","hoop","ramp"]
 ```
 - ros2 launch depthai_filters example_det2d_overlay.launch.py params_file:=/home/karl/ros2_ws/src/descentracer/descent_perception/config/custom_camera.yaml
-- <https://hub.luxonis.com/ai/>
-  - Sign in via github
-  - AI, Models, + Add Model
-  - The conversion worked online and I downloaded a folder with a .superblob and json
-  - I tried to setup the ros_nn_config.json in the 
-- <https://blobconverter.luxonis.com/>
-  - Not tested. See <https://docs.luxonis.com/software/ai-inference/conversion>
+  - This launches camera.launch.py and the overlay node.
+  - Currently, the camera image is cropped to get to 320 x 320 and we lose horizontal fov, but this may be acceptable.
 
 # Label images
 - Label images using label studio
