@@ -12,12 +12,17 @@
 - python3 descent_train.py
 - python3 descent_test.py
 
-# Export detection model for oak d lite
+# Export detection model for oak d lite depthai ros
+## Export model references
 - <https://learnopencv.com/object-detection-on-edge-device/>
 - <https://docs.luxonis.com/cloud/hubai/features/model-conversion/>
 - <https://hub.luxonis.com/ai/models/>
 - <https://github.com/luxonis/depthai-ros/issues/452>
 - <https://github.com/luxonis/depthai-ros/issues/371>
+### Different Luxonis Converters and Status
+- <https://blobconverter.luxonis.com/>
+  - Not tested. See <https://docs.luxonis.com/software/ai-inference/conversion>
+- <https://tools.luxonis.com/>
 # Label images
 - Label images using label studio
   - Setup desired classes/categories
